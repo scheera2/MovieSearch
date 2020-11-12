@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Reviews With AirTable API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+    </style>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <nav class="topnav" id="myTopnav">
+          <a href="/index.html" style="float: left">
+            <h1>Movie Search</h1>
+          </a>
+          <a href="/reviews.html" style="float: left"><h1>User Reviews</h1></a>
+          <a href="https://github.com/scheera2/MovieSearch" style="float: left"><h1>View GitHub</h1></a>
+        </nav>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col-sm-4" id="listOne" align="center">
+          <!-- changed column to col-sm -->
+          <ul id="firstList">
+            <h1>My Favorite Movies</h1>
+            <h2>Click a title to view more details</h2>
+            <br />
+            <li id="borat" onclick="getAirtable('Borat Subsequent Moviefilm')">
+              Borat Subsequent Moviefilm
+            </li>
+            <li id="hamrony" onclick="getAirtable('Harmony')">Harmony</li>
+            <li id="shawshank" onclick="getAirtable('The Shawshank Redemption')">
+              The Shawshank Redemption
+            </li>
+            <li id="inglorious" onclick="getAirtable('The Inglorious Basterds')">
+              The Inglorious Basterds
+            </li>
+            <li id="player" onclick="getAirtable('Ready Player One')">
+              Ready Player One
+            </li>
+            <li id="it" onclick="getAirtable('It')">It</li>
+            <li id="promare" onclick="getAirtable('Promare')">Promare</li>
+            <li id="lebowski" onclick="getAirtable('The Big Lebowski')">
+              The Big Lebowski
+            </li>
+            <li id="parasite" onclick="getAirtable('Parasite')">Parasite</li>
+            <li id="busan" onclick="getAirtable('Train to Busan')">
+              Train to Busan
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4" id="listTwo" align="center">
+          <h1 class="title">Movie Title</h1>
+          <div class="moviePoster">
+            <br />
+            <img
+              class="reviewPoster"
+              src="./images/SampleMoviePoster.jpg"
+              alt="Movie Poster"
+            />
+          </div>
+        </div>
+
+        <div class="col-sm-4" id="listThree" >
+          <h2 class="genre" align="center"></h2>
+          <h2 class="rating" align="center"></h2> <br>
+          <h2 class="review"></h2>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/airtable.js"></script>
+  </body>
+</html>

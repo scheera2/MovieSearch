@@ -1,0 +1,22 @@
+{
+  "name": "movie-search",
+  "version": "1.0.0",
+  "description": "Aidan's Project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scheera2/MovieSearch.git"
+  },
+  "keywords": [],
+  "author": "Aidan Scheer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scheera2/MovieSearch/issues"
+  },
+  "homepage": "https://github.com/scheera2/MovieSearch#readme",
+  "dependencies": {
+    "airtable": "^0.10.1"
+  }
+}

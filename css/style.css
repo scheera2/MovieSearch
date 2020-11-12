@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "myFirstFont";
+  src: url(/fonts/DiamondDust.ttf);
+}
+
+body,
+html {
+  background-image: url("/images/WoodTexture.jpeg");
+
+  /* Full height */
+  height: 100%;
+  width: auto;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #822222;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px 1px 1px 1px solid #e94b3cff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  border: gray 1px;
+  font-family: "Lato", sans-serif;
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.25s linear;
+}
+
+.topnav a:hover {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.25em;
+}
+
+img.poster {
+  width: 90%;
+  padding: 0%;
+  height: auto;
+  margin-bottom: 1em;
+  max-height: 900px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.topnav h2 {
+  color: white;
+  font-size: 20px;
+  margin-top: 0.75em;
+}
+
+.topnav h1 {
+  font-family: myFirstFont;
+  color: gold;
+  font-size: 60px;
+  margin-left: 0.5em;
+}
+
+#moviePoster,
+#titleSummary,
+#ratingsDetails {
+  margin-top: 1em;
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.col-sm-4 h1 {
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.col-sm-4 h2 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+img.rating {
+  max-height: 75px;
+  width: auto;
+}
+
+#ratings {
+  font-size: 40px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.col-sm-4 h3 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  line-height: 1.5em;
+}
+
+#firstList {
+  color: white;
+  font-size: 30px;
+  text-align: initial;
+  list-style: circle;
+}
+
+img.reviewPoster {
+  width: auto;
+  padding: 0%;
+  height: auto;
+  max-height: 600px;
+}
+
+h3.summary {
+  font-size: 25px;
+}
+
+#firstList h2 {
+  font-size: 30px;
+}
+
+#firstList li:hover {
+  opacity: 50%;
+  transition: 0.25s;
+}
+
+.genre {
+  margin-top: 0.1em;
+}
