@@ -18,9 +18,10 @@
     </style>
   </head>
   <body>
+    <div class="bg"> <!-- Set background of the page -->
     <main class="container-fluid">
       <div class="row">
-        <nav class="topnav" id="myTopnav">
+        <nav class="topnav" id="myTopnav"> <!-- Initiating Nav Bar -->
           <a href="/index.html" style="float: left">
             <h1>Movie Search</h1>
           </a>
@@ -32,8 +33,7 @@
       <br />
 
       <div class="row">
-        <div class="col-sm-4" id="listOne" align="center">
-          <!-- changed column to col-sm -->
+        <div class="col-sm-4" id="listOne" align="center"> <!-- This column displays a movie list, clicking on any of the titles will fetch data from AirTable -->
           <ul id="firstList">
             <h1>My Favorite Movies</h1>
             <h2>Click a title to view more details</h2>
@@ -62,7 +62,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-4" id="listTwo" align="center">
+        <div class="col-sm-4" id="listTwo" align="center"> <!-- Basic Movie Poster (Hidden. Becomes visible w/title when movie is searched for) -->
           <h1 class="title">Movie Title</h1>
           <div class="moviePoster">
             <br />
@@ -74,13 +74,14 @@
           </div>
         </div>
 
-        <div class="col-sm-4" id="listThree" >
+        <div class="col-sm-4" id="listThree" > <!-- This column displayes the user rating, genres, and user review of the movie selected -->
           <h2 class="genre" align="center"></h2>
           <h2 class="rating" align="center"></h2> <br>
           <h2 class="review"></h2>
         </div>
       </div>
     </main>
+    </div>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"

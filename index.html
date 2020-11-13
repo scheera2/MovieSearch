@@ -7,17 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
     <style></style>
   </head>
-  <body>
+  <body> 
+    <div class="bg"> <!-- Set background of the page -->
     <main class="container-fluid">
       <div class="row">
-        <nav class="topnav" id="myTopnav">
+        <nav class="topnav" id="myTopnav">  <!-- Initiating Nav Bar -->
           <a href="/index.html" style="float: left">
             <h1>Movie Search</h1>
           </a>
@@ -27,7 +28,7 @@
           >
           <a style="padding: 1.25em">
             <form id="searchForm">
-              <input type="text" id="searchText" />
+              <input type="text" id="searchText" /> <!-- Search bar for OMDB in Navbar -->
             </form>
           </a>
           <a style="padding: 1.5em"
@@ -38,15 +39,14 @@
         </nav>
       </div>
       <div class="row">
-        <div class="col-sm-4" id="moviePoster">
-          <!-- changed column to col-sm -->
+        <div class="col-sm-4" id="moviePoster"> <!-- Basic Movie Poster (Hidden. Becomes visible when movie is searched for) -->
           <img
             class="poster"
             src="/images/SampleMoviePoster.jpg"
             alt="Movie Poster"
           />
         </div>
-        <div class="col-sm-4" id="titleSummary">
+        <div class="col-sm-4" id="titleSummary"> <!-- This column displays the Title, Year, Rating, Genre and Critic Ratings of the searched Movie -->
           <h1 class="title">Movie Title</h1>
           <h2 class="year">Year of Release</h2>
           <br />
@@ -56,12 +56,13 @@
           <br />
           <p id="ratings"></p>
         </div>
-        <div class="col-sm-4" id="ratingsDetails">
+        <div class="col-sm-4" id="ratingsDetails"> <!-- This column prints out the plot summary of the movie searched -->
           <h1>Movie Summary</h1>
           <h3 class="summary">Summary of the Movie</h3>
         </div>
       </div>
-    </main>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"

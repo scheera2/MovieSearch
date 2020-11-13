@@ -1,19 +1,23 @@
 @font-face {
+  /* Sets font for the text in the navbar */
   font-family: "myFirstFont";
   src: url(/fonts/DiamondDust.ttf);
 }
 
 body,
 html {
-  background-image: url("/images/WoodTexture.jpeg");
-
   /* Full height */
   height: 100%;
-  width: auto;
+  margin: 0;
+}
+
+.bg {
+  background-image: url(/images/WoodTextureDark.png);
+  height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -34,7 +38,6 @@ html {
   border: gray 1px;
   font-family: "Lato", sans-serif;
   float: right;
-  color: white;
   text-align: center;
   padding: 0.5em;
   text-decoration: none;
@@ -43,6 +46,7 @@ html {
 }
 
 .topnav a:hover {
+  /* Makes sure the text doesn't have a hyperlink decoration when hovered */
   text-decoration: none;
 }
 
@@ -119,6 +123,7 @@ img.rating {
 }
 
 #firstList {
+  /* Makes sure the user movies list is oriented on the left side */
   color: white;
   font-size: 30px;
   text-align: initial;
@@ -141,10 +146,21 @@ h3.summary {
 }
 
 #firstList li:hover {
+  /* Small blur effect when hovering over the movie titles */
   opacity: 50%;
   transition: 0.25s;
 }
 
 .genre {
   margin-top: 0.1em;
+}
+
+#listTwo {
+  /* Hides the placeolder image, JS reveals the image retrieved from the API */
+  opacity: 0%;
+}
+
+#moviePoster {
+  /* Hides the placeolder image, JS reveals the image retrieved from the API */
+  opacity: 0%;
 }
