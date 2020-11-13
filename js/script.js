@@ -35,7 +35,7 @@ async function getMovies(text) {
 }
 
 function getRated(rated) {
-  var imageBasePath = `/images/ratingicons`; //Sets base path to image folder with movie ratings (G,PG,PG13,R,NC17,Unrated)
+  var imageBasePath = `./images/ratingicons`; //Sets base path to image folder with movie ratings (G,PG,PG13,R,NC17,Unrated)
 
   if (rated == "G") {
     $(".rating").attr("src", `${imageBasePath}/g.png`); //Checks to see if fetched rating data equals a specific rating, then changes the rating image
