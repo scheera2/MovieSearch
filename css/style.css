@@ -1,7 +1,7 @@
 @font-face {
   /* Sets font for the text in the navbar */
   font-family: "myFirstFont";
-  src: url(./fonts/DiamondDust.ttf);
+  src: url(../fonts/DiamondDust.ttf);
 }
 
 body,
@@ -12,7 +12,7 @@ html {
 }
 
 .bg {
-  background-image: url(./images/WoodTextureDark.png);
+  background-image: url(../images/WoodTextureDark.png);
   height: 100%;
 
   /* Center and scale the image nicely */
